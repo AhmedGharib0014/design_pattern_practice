@@ -6,8 +6,6 @@
 
 ## class diagram
 
-
-
 ```mermaid
  classDiagram
     Client *-- Adaptor
