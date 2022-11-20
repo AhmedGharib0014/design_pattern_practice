@@ -13,10 +13,10 @@
 
 ```mermaid
  classDiagram
-    Abstaction |--RefinedAbstraction
+    Abstaction <|--RefinedAbstraction
     Abstaction *-- Implementor
-    Implementor |-- ConcreteImplementorA
-    Implementor |-- ConcreteImplementorB
+    Implementor <|-- ConcreteImplementorA
+    Implementor <|-- ConcreteImplementorB
 
     class Abstaction {
         +operation()
