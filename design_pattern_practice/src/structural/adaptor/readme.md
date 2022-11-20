@@ -4,3 +4,25 @@
 - you want to do something from client , this thing is not supported by legacy product so the adaptor do that for you 
 - if u want to add functionality you can use decorated pattern 
 
+## class diagram
+
+
+
+```mermaid
+ classDiagram
+    Client *-- Adaptor
+    Adaptor *-- LgacyProduct
+    class Client {
+        +doSomeThing()
+    }
+    
+    class Adaptor {
+         <<interface>>
+        +doThis()
+    }
+    
+    class LgacyProduct {
+        +doThat()
+    } 
+    
+```
