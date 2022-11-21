@@ -9,7 +9,9 @@
 - participants :-
   - component :- interface 
   - leaf :- component 
-  - composite :- component that has children and implement methods that manipulate them 
+  - composite :- component that has children and implement methods that manipulate them
+- pitfalls
+  - can lead to runtime checks
 
 
 

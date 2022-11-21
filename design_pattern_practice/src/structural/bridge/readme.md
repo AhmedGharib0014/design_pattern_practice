@@ -10,6 +10,8 @@
   - more than composition 
   - expect changes from both sides
   - u have two products and every one can change independently
+- pitfalls
+  - complex
 
 ```mermaid
  classDiagram
