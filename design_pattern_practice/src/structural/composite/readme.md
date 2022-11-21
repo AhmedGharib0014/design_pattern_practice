@@ -27,7 +27,7 @@
     class Composite {
          +operation()
          +add()
-         +remove
+         +remove()
     }
     
     class Leaf {
