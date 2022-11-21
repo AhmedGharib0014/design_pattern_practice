@@ -4,10 +4,8 @@
 - it's refactoring pattern 
 - used with poorly designed api 
 - utilize composition only , no need for inheritance
-
-
-
-
+- pitfalls
+  - overused or miss-used often 
 
 ```mermaid
  classDiagram
