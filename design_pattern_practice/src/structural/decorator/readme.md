@@ -4,6 +4,13 @@
 - compose behavior dynamically by using subclasses of decorated object
 - utilize both inheritance and composition 
 - alternative of subclasses 
+- pitfalls
+  - new class for every feature added
+  - multiple little objects
+  - confused with inheritance
+  - complex for clients
+  
+
 
 
 
