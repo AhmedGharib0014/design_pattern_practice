@@ -1,4 +1,4 @@
-# Bridge Pattern 
+# Composite Pattern 
 - deals with tree structure of information
 - compose objects into tree structure
 - same operations applies on individual and composite and expect them to behave the same way
