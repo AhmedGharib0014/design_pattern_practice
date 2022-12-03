@@ -4,6 +4,11 @@
 - large number of immutable stateless objects (String in java)
 - pattern of patterns (utilize factory)
 - encompasses creating and structure 
+- like caching in map 
+- in example:-
+  - item is the  immutable stateless objects
+  - catalog is the FlywieghtFactory
+  - although there are more than 3 orders the created items is only 3 
 
 ```mermaid
  classDiagram
