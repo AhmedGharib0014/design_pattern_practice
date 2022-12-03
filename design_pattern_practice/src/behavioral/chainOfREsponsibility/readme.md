@@ -8,7 +8,8 @@
 - you can add chins or modify chain without rewriting large portion of app
 - no handler is ok
 - example:- spring security filter chain
-- 
+- pitfalls:-
+  - chain length/performance issues
 
 
 ## class diagram
