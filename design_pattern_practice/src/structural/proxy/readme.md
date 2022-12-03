@@ -13,7 +13,7 @@
 
 ```mermaid
  classDiagram
-    Subject *-- Client
+    Client *-- Subject
     Subject <|-- Proxy
     Subject <|--RealSubject
     Proxy *-- RealSubject
