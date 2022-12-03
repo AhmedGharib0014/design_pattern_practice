@@ -9,6 +9,11 @@
   - invocationHandler 
   - Proxy(java.lang.reflect)
 - Proxy uses these class to do its job
+- intercept calls to main impl of an interface
+- pitfalls
+  - only one proxy(one instance)
+  - another abstraction layer
+  - similar to other patterns(decorated and adaptor)
 
 
 ```mermaid
