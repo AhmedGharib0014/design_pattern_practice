@@ -7,8 +7,8 @@
 
 ```mermaid
  classDiagram
-    Client <-- FlywieghtFactory
-    Client <-- ConcreteFlywiesght
+    FlywieghtFactory <-- Client
+    ConcreteFlywiesght <-- Client
     FlywieghtFactory *-- Flyweight
     Flyweight <|-- ConcreteFlywiesght
     
