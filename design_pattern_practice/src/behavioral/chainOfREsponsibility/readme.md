@@ -24,7 +24,8 @@
     }
     
     class Handler {
-         <<interface>>
+         <<Abstract>>
+         Handler successor
         +handleRequest()
     }
     
