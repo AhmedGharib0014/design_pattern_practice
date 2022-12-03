@@ -1,4 +1,4 @@
-package com.pluralsight.flyweight;
+package structural.flyWeight;
 
 public class FlyweightInventoryDemo {
 

@@ -1,4 +1,4 @@
-package com.pluralsight.flyweight;
+package structural.flyWeight;
 
 import java.util.HashMap;
 import java.util.Map;
