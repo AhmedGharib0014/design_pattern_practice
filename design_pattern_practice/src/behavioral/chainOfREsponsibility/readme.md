@@ -10,6 +10,7 @@
 - example:- spring security filter chain
 - pitfalls:-
   - chain length/performance issues
+  - runtime configuration risk
 
 
 ## class diagram
