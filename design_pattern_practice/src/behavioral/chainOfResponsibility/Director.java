@@ -1,4 +1,4 @@
-package behavioral.chainOfREsponsibility;
+package behavioral.chainOfResponsibility;
 
 public class Director extends Handler{
     @Override

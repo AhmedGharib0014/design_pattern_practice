@@ -4,6 +4,7 @@
 - decouple the data from algorithm used to traverse it
 - sequential 
 - interface base
+- you can use it to iterate a set
 
 
 ## class diagram
