@@ -1,7 +1,7 @@
 # builder Pattern
 - construct object consists of lots of params and want to make it immutable once you constructed it
 - solve a problem of determining what constructor to use (telescoping constructors)
-- builder solve this by managing construction instead of params
+- builder solve this by managing construction by object instead of params
 - static inner class
 - can be implemented in another class to so it works with legacy code 
 - no need to expose setter for each param
