@@ -10,7 +10,7 @@
 
 ```mermaid
  classDiagram
-    Builder <-- ConcreteBuilder
+    Factory <-- ConcreteFactory
  
     class Factory {
      factoryMethod()
