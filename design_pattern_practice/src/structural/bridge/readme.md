@@ -1,9 +1,8 @@
 # Bridge Pattern 
-- works with new code while the adaptor works with legacy code 
-- decouple abstraction ans implementation 
-- changes in abstraction won't affect the client
+- two separate abstraction and implementation hierarchies 
 - details won't be right to begin with 
-- expect changes from both sides (client and product)
+- expect changes from both sides (client and product) 
+- ix between them is required 
 - uses :-
   - interfaces and abstract class
   - composition over inheritance 
@@ -38,6 +37,32 @@
     
     class ConcreteImplementorB {
         +operationImpl()
+    } 
+    
+    
+    classs Shape(){
+        <<interface>>
+        +draw()
+    }
+    
+    class ShapeColor {
+        +draw()
+    } 
+    
+    
+     classs Plateform(){
+        <<interface>>
+        +drawShpe(Shape shape)
+    }
+    
+    class PlateformImpl {
+         +drawShpe(Shape shape)
+    } 
+    
+    
+    class Bridge {
+         -Platefom plateform 
+         +draw(Shape shape)
     } 
     
 ```
