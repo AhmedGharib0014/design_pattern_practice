@@ -44,7 +44,7 @@
     
     
     classs Shape(){
-        <<interface>>
+         <<interface>>
         +draw()
     }
     
@@ -54,7 +54,7 @@
     
     
      classs Plateform(){
-        <<interface>>
+         <<interface>>
         +drawShpe(Shape shape)
     }
     
