@@ -18,6 +18,9 @@
     Abstaction *-- Implementor
     Implementor <|-- ConcreteImplementorA
     Implementor <|-- ConcreteImplementorB
+    Shape <|-- ShapeImpl
+    Plateform <|-- PlateformImpl
+    Bridge <|-- Plateform
 
     class Abstaction {
         +operation()
@@ -45,7 +48,7 @@
         +draw()
     }
     
-    class ShapeColor {
+    class ShapeImpl {
         +draw()
     } 
     
