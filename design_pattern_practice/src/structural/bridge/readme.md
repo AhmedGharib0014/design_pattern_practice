@@ -20,7 +20,8 @@
     Implementor <|-- ConcreteImplementorB
     Shape <|-- ShapeImpl
     Plateform <|-- PlateformImpl
-    Bridge <|-- Plateform
+    Bridge *-- Plateform
+    Bridge *-- Shape
 
     class Abstaction {
         +operation()
@@ -43,7 +44,7 @@
     } 
     
     
-    classs Shape(){
+    classs Shape{
          <<interface>>
         +draw()
     }
@@ -53,7 +54,7 @@
     } 
     
     
-     classs Plateform(){
+     classs Plateform{
          <<interface>>
         +drawShpe(Shape shape)
     }
@@ -61,7 +62,6 @@
     class PlateformImpl {
          +drawShpe(Shape shape)
     } 
-    
     
     class Bridge {
          -Platefom plateform 
