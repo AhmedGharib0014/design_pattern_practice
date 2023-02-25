@@ -16,7 +16,7 @@
     Receiver <-- Client
     ConcreteCommand <--Client
     Invoker <--Client
-    Receiver <|-- ConcreteCommand
+    Receiver <-- ConcreteCommand
     Invoker *-- Command
     Command <|-- ConcreteCommand
     
