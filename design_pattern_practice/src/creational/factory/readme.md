@@ -45,7 +45,7 @@
  classDiagram
     Creator <-- ConcreteCreator
     Product <-- ConcreteProduct
-    Product <-- ConcreteCreator
+    Product <|-- ConcreteCreator
  
     class Creator {
      otherFunctionThatUsesFactoryMethod()
@@ -56,7 +56,4 @@
       factoryMethod()
     }
     
-    class Product {} 
-    
-    class ConcreteProduct {} 
 ```
