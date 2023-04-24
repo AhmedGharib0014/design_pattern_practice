@@ -1,4 +1,7 @@
 # factory Pattern
+- The Factory Method Pattern defines an interface for creating an object.
+- but lets subclasses decide which class to instantiate.
+- Factory Method lets a class defer instantiation to subclasses.
 - does not expose initiation logic 
 - client does not know about initiation or type
 - opposite to singleton  
@@ -12,6 +15,9 @@
 - Defining a simple factory as a static method is a common technique and is often called a static factory.
 - Why use a static method? Because you don’t need to instantiate an object to make use of the create method.
 - But remember it also has a disadvantage that you can’t subclass and change the behavior of the create method. 
+- They say “decide” not because the pattern allows subclasses themselves to decide at runtime, but because the creator class is written
+  without knowledge of the actual products that will be created, which is decided purely by
+  the choice of the subclass that is used.
 
 
 ## simple factory 
@@ -37,20 +43,20 @@
 
 ```mermaid
  classDiagram
-    SuperClass <-- Subclass1
-    SuperClass <-- Subclass2
+    Creator <-- ConcreteCreator
+    Product <-- ConcreteProduct
+    Product <|-- ConcreteCreator
  
-    class SuperClass {
+    class Creator {
      otherFunctionThatUsesFactoryMethod()
      factoryMethod()
     } 
     
-    class Subclass1 {
+    class ConcreteCreator {
       factoryMethod()
     }
     
-     class Subclass2 {
-      factoryMethod()
-    }
-   
+    class Product {} 
+    
+    class ConcreteProduct {} 
 ```
