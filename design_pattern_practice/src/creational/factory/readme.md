@@ -70,8 +70,8 @@
 ```mermaid
  classDiagram
     Client -->  AbstractFactory 
-    AbstractProductA <-- Client
-    AbstractProductB <-- Client
+    Client -->  AbstractProductA 
+    Client -->  AbstractProductB 
     AbstractFactory <|-- ConcreteFactory1
     AbstractFactory <|-- ConcreteFactory2
     AbstractProductA <|-- ProductA1
