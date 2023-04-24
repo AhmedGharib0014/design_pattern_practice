@@ -57,3 +57,45 @@
     }
     
 ```
+
+## abstract factory 
+- The Abstract Factory Pattern provides an interface for creating families of related or dependent objects
+  without specifying their concrete classes.
+- An Abstract Factory gives us an interface for creating a family of products.
+- By writing code that uses this interface, we decouple our code from the actual factory that creates the products. 
+- That allows us to implement a variety of factories that produce products meant for different contexts.
+- such as different regions, different operating systems, or different look and feels.
+
+
+```mermaid
+ classDiagram
+    AbstractFactory <-- Client
+    AbstractProductA <-- Client
+    AbstractProductB <-- Client
+    AbstractFactory <|-- ConcreteFactory1
+    AbstractFactory <|-- ConcreteFactory2
+    AbstractProductA <|-- ProductA1
+    AbstractProductA <|-- ProductA2
+    AbstractProductB <|-- ProductB1
+    AbstractProductB <|-- ProductB2
+    ProductA1 <--ConcreteFactory1
+    ProductB1 <--ConcreteFactory1
+    ProductA2 <--ConcreteFactory2
+    ProductB2 <--ConcreteFactory2
+    
+    class AbstractFactory {
+     cretaProductA()
+     cretaProductB()
+    } 
+    
+    class ConcreteFactory1 {
+     cretaProductA()
+     cretaProductB()
+    }
+    
+    class ConcreteFactory2 {
+     cretaProductA()
+     cretaProductB()
+    }
+    
+```
