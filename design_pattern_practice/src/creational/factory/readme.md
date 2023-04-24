@@ -25,7 +25,7 @@
 
 ```mermaid
  classDiagram
-    Factory <-- ConcreteFactory
+    Factory <|-- ConcreteFactory
  
     class Factory {
        instance()
@@ -43,9 +43,9 @@
 
 ```mermaid
  classDiagram
-    Creator <-- ConcreteCreator
-    Product <-- ConcreteProduct
-    Product <|-- ConcreteCreator
+    Creator <|-- ConcreteCreator
+    Product <|-- ConcreteProduct
+    Product <-- ConcreteCreator
  
     class Creator {
      otherFunctionThatUsesFactoryMethod()
