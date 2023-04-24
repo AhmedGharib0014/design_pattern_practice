@@ -45,7 +45,11 @@
      factoryMethod()
     } 
     
-    class ConcreteFactory {
+    class Subclass1 {
+      factoryMethod()
+    }
+    
+     class Subclass2 {
       factoryMethod()
     }
    
