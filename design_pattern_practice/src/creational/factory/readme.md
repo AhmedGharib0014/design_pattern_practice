@@ -74,14 +74,14 @@
     AbstractProductB <-- Client
     AbstractFactory <|-- ConcreteFactory1
     AbstractFactory <|-- ConcreteFactory2
-    AbstractProductA <|-- ProductA1
-    AbstractProductA <|-- ProductA2
-    AbstractProductB <|-- ProductB1
-    AbstractProductB <|-- ProductB2
     ProductA1 <--ConcreteFactory1
     ProductB1 <--ConcreteFactory1
     ProductA2 <--ConcreteFactory2
     ProductB2 <--ConcreteFactory2
+    AbstractProductA <|-- ProductA1
+    AbstractProductA <|-- ProductA2
+    AbstractProductB <|-- ProductB1
+    AbstractProductB <|-- ProductB2
     
     class AbstractFactory {
      cretaProductA()
